@@ -1,4 +1,5 @@
-Summary:	Xprobe2 is a fuzzy remote OS fingerprinting tool.
+Summary:	Xprobe2 is a fuzzy remote OS fingerprinting tool
+Summary(pl):	Xprobe2 - narzêdzie do "rozmytej" identyfikacji zdalnych systemów
 Name:		xprobe2
 Version:	0.1rc1
 Release:	0.5
@@ -7,7 +8,6 @@ Group:		Networking
 Source0:	http://www.sys-security.com/archive/tools/xprobe2/%{name}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 URL:		http://www.sys-security.com/html/projects/X.html
-BuildRequires:	glibc-devel
 BuildRequires:	libpcap-devel
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -15,10 +15,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_sysconfdir	/etc/%{name}
 
 %description
-Xprobe2 is a fuzzy remote OS fingerprinting tool. Xprobe2 functionality is
-heavily based  on Xprobe, but also uses other OS fingerprinting techniques
-and is based on a signature base, which is matched in fuzzy manner.
-Xprobe2 has been completely rewritten from the scratch in C++.
+Xprobe2 is a fuzzy remote OS fingerprinting tool. Xprobe2
+functionality is heavily based on Xprobe, but also uses other OS
+fingerprinting techniques and is based on a signature base, which is
+matched in fuzzy manner. Xprobe2 has been completely rewritten from
+the scratch in C++.
+
+%description -l pl
+Xprobe2 to narzêdzie do "rozmytej" identyfikacji zdalnych systemów
+operacyjnych. Funkcjonalno¶æ Xprobe2 bazuje g³ównie na Xprobe, ale
+u¿ywa innych technik identyfikacji i opiera siê na bazie sygnatur,
+które s± dopasowywane w sposób rozmyty. Xprobe2 zosta³o napisane od
+zera w C++.
 
 %prep
 %setup -q -n %{name}
