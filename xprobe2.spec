@@ -1,13 +1,14 @@
 Summary:	Xprobe2 is a fuzzy remote OS fingerprinting tool
 Summary(pl):	Xprobe2 - narzêdzie do "rozmytej" identyfikacji zdalnych systemów
 Name:		xprobe2
-Version:	0.1rc1
-Release:	0.5
+Version:	0.2
+Release:	0.1
 License:	GPL
 Group:		Networking
 Source0:	http://www.sys-security.com/archive/tools/xprobe2/%{name}-%{version}.tar.gz
-# Source0-md5:	3afdc2037da09baa8e8b388af669f39d
+# Source0-md5:	ca723a7e4c8c5001191efdb43e63bbee
 Patch0:		%{name}-paths.patch
+Patch1:		%{name}-gcc33.patch
 URL:		http://www.sys-security.com/html/projects/X.html
 BuildRequires:	autoconf
 BuildRequires:	libpcap-devel
@@ -31,10 +32,13 @@ które s± dopasowywane w sposób rozmyty. Xprobe2 zosta³o napisane od
 zera w C++.
 
 %prep
-%setup -q -n %{name}
-%patch0	-p1
+%setup -q
+#%%patch0	-p1
+%patch1 -p1
 
 %build
+cp -f /usr/share/automake/config.sub cfg-scripts/config.sub 
+cp -f /usr/share/automake/config.sub libs-external/USI++/src/cfgaux/config.sub
 %{__autoconf}
 cd libs-external/USI++/src
 %{__autoconf}
