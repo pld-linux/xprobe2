@@ -1,12 +1,12 @@
-diff -urN xprobe2/src/defines.h.in xprobe2.dzikus/src/defines.h.in
---- xprobe2/src/defines.h.in	Thu Aug  8 13:25:56 2002
-+++ xprobe2.dzikus/src/defines.h.in	Mon Aug 12 12:30:32 2002
+diff -urN xprobe2-0.2.orig/src/defines.h.in xprobe2-0.2/src/defines.h.in
+--- xprobe2-0.2.orig/src/defines.h.in	2003-09-26 11:40:23.000000000 +0000
++++ xprobe2-0.2/src/defines.h.in	2004-08-31 16:34:24.001638912 +0000
 @@ -32,7 +32,7 @@
- #define DATA_SIZE 20
  #define DEF_TIMEOUT 10
+ #define DEF_SEND_DELAY 0.01
  #define PACKBUF_SIZ 1024
--#define DEFAULT_CONFIG "xprobe2.conf"
+-#define DEFAULT_CONFIG "@CFGDIR@/xprobe2.conf"
 +#define DEFAULT_CONFIG "/etc/xprobe2/xprobe2.conf"
+ #define DEFAULT_MATCHES 10
  
  #define UDP_PORT 32132
- #define UDP_DATA_SIZE 70
