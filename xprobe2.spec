@@ -8,6 +8,7 @@ Group:		Networking
 Source0:	http://www.sys-security.com/archive/tools/xprobe2/%{name}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 URL:		http://www.sys-security.com/html/projects/X.html
+BuildRequires:	autoconf
 BuildRequires:	libpcap-devel
 BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
