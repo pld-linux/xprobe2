@@ -6,7 +6,7 @@ Release:	0.1
 License:	GPL
 Group:		Networking
 Source0:	http://www.sys-security.com/archive/tools/xprobe2/%{name}-%{version}.tar.gz
-# Source0-md5:	ca723a7e4c8c5001191efdb43e63bbee
+# Source0-md5:	3ebb89ed9380038d368327816e34ec54
 Patch0:		%{name}-paths.patch
 URL:		http://www.sys-security.com/html/projects/X.html
 BuildRequires:	autoconf
