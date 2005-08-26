@@ -5,10 +5,10 @@ Version:	0.3
 Release:	0.1
 License:	GPL
 Group:		Networking
-Source0:	http://www.sys-security.com/archive/tools/xprobe2/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/xprobe/%{name}-%{version}.tar.gz
 # Source0-md5:	3ebb89ed9380038d368327816e34ec54
 Patch0:		%{name}-paths.patch
-URL:		http://www.sys-security.com/html/projects/X.html
+URL:		http://www.sys-security.com/index.php?page=xprobe
 BuildRequires:	autoconf
 BuildRequires:	libpcap-devel
 BuildRequires:	libstdc++-devel
@@ -60,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README CHANGELOG docs/modules_howto.txt
 %attr(755,root,root) %{_bindir}/xprobe2
 %{_mandir}/man1/*
-%attr(644,root,root) %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/xprobe2.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/xprobe2.conf
