@@ -32,7 +32,7 @@ zera w C++.
 
 %prep
 %setup -q
-%patch0	-p1
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub cfg-scripts/config.sub 
@@ -48,7 +48,8 @@ cd ../../../
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install -D etc/xprobe2.conf $RPM_BUILD_ROOT%{_sysconfdir}/xprobe2.conf
 
