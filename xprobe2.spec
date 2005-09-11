@@ -60,5 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README CHANGELOG docs/modules_howto.txt
 %attr(755,root,root) %{_bindir}/xprobe2
-%{_mandir}/man1/*
+%dir %{_sysconfdir}
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/xprobe2.conf
+%{_mandir}/man1/*
