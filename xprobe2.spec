@@ -1,5 +1,5 @@
 Summary:	Xprobe2 is a fuzzy remote OS fingerprinting tool
-Summary(pl):	Xprobe2 - narzêdzie do "rozmytej" identyfikacji zdalnych systemów
+Summary(pl.UTF-8):   Xprobe2 - narzÄ™dzie do "rozmytej" identyfikacji zdalnych systemÃ³w
 Name:		xprobe2
 Version:	0.3
 Release:	0.1
@@ -23,11 +23,11 @@ fingerprinting techniques and is based on a signature base, which is
 matched in fuzzy manner. Xprobe2 has been completely rewritten from
 the scratch in C++.
 
-%description -l pl
-Xprobe2 to narzêdzie do "rozmytej" identyfikacji zdalnych systemów
-operacyjnych. Funkcjonalno¶æ Xprobe2 bazuje g³ównie na Xprobe, ale
-u¿ywa innych technik identyfikacji i opiera siê na bazie sygnatur,
-które s± dopasowywane w sposób rozmyty. Xprobe2 zosta³o napisane od
+%description -l pl.UTF-8
+Xprobe2 to narzÄ™dzie do "rozmytej" identyfikacji zdalnych systemÃ³w
+operacyjnych. FunkcjonalnoÅ›Ä‡ Xprobe2 bazuje gÅ‚Ã³wnie na Xprobe, ale
+uÅ¼ywa innych technik identyfikacji i opiera siÄ™ na bazie sygnatur,
+ktÃ³re sÄ… dopasowywane w sposÃ³b rozmyty. Xprobe2 zostaÅ‚o napisane od
 zera w C++.
 
 %prep
