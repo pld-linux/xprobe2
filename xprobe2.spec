@@ -1,5 +1,5 @@
 Summary:	Xprobe2 is a fuzzy remote OS fingerprinting tool
-Summary(pl.UTF-8):   Xprobe2 - narzędzie do "rozmytej" identyfikacji zdalnych systemów
+Summary(pl.UTF-8):	Xprobe2 - narzędzie do "rozmytej" identyfikacji zdalnych systemów
 Name:		xprobe2
 Version:	0.3
 Release:	0.1
